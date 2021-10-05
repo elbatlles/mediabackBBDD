@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_aboutoption_about_us_options",
+  "info": {
+    "name": "About Us Option",
+    "icon": "angle-up"
+  },
+  "options": {},
+  "attributes": {
+    "iconImg": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true
+    },
+    "header": {
+      "type": "string",
+      "default": "10 Years",
+      "required": true
+    },
+    "subheading": {
+      "type": "string",
+      "default": "On the market",
+      "required": true
+    }
+  }
+}

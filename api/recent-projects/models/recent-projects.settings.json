@@ -1,0 +1,30 @@
+{
+  "kind": "singleType",
+  "collectionName": "recent_projects",
+  "info": {
+    "name": "recent Project Header",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "subTitle": {
+      "type": "string",
+      "default": "Recent Projects",
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "default": "Check Some Of Our Recent Work",
+      "required": true
+    },
+    "shortText": {
+      "type": "string",
+      "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.",
+      "required": true
+    }
+  }
+}

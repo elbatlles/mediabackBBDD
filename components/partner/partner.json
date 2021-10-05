@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_partner_partners",
+  "info": {
+    "name": "partner",
+    "icon": "chevron-right"
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true
+    }
+  }
+}

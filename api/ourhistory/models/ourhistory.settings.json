@@ -1,0 +1,30 @@
+{
+  "kind": "singleType",
+  "collectionName": "ourhistories",
+  "info": {
+    "name": "our history",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "subTitle": {
+      "type": "string",
+      "default": "Our History",
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": true,
+      "default": "History Begins in 2010"
+    },
+    "historyList": {
+      "type": "component",
+      "repeatable": true,
+      "component": "historylist.historylist"
+    }
+  }
+}

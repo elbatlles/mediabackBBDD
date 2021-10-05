@@ -1,0 +1,35 @@
+{
+  "kind": "singleType",
+  "collectionName": "how_it_works",
+  "info": {
+    "name": "how It Work",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "subTitle": {
+      "type": "string",
+      "default": "How It's Work",
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "default": "The Data Science Process",
+      "required": true
+    },
+    "shortText": {
+      "type": "string",
+      "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.",
+      "required": true
+    },
+    "process": {
+      "type": "component",
+      "repeatable": true,
+      "component": "how-it-work.how-it-work"
+    }
+  }
+}

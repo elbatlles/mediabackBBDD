@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_aboutgoalslist_about_goals_lists",
+  "info": {
+    "name": "About Goals List",
+    "icon": "angle-left",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "iconClass": {
+      "type": "string",
+      "default": "flaticon-tick",
+      "required": true
+    },
+    "name": {
+      "type": "string",
+      "default": "Activate Listening",
+      "required": true
+    }
+  }
+}

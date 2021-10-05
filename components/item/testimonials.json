@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_item_testimonials",
+  "info": {
+    "name": "testimonials",
+    "icon": "align-left"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "default": "Alex Maxwell",
+      "required": true
+    },
+    "designation": {
+      "type": "string",
+      "default": "CEO at EnvyTheme",
+      "required": true
+    },
+    "feedbackText": {
+      "type": "text",
+      "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna ali. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis",
+      "required": true
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true
+    }
+  }
+}

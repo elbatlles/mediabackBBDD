@@ -1,0 +1,35 @@
+{
+  "kind": "singleType",
+  "collectionName": "team_style1s",
+  "info": {
+    "name": "team Style 1",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "subTitle": {
+      "type": "string",
+      "default": "Team Members",
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "default": "Our Awesome Team",
+      "required": true
+    },
+    "shortText": {
+      "type": "string",
+      "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.",
+      "required": true
+    },
+    "teamCard": {
+      "type": "component",
+      "repeatable": true,
+      "component": "team-card-style1.team-card-style1"
+    }
+  }
+}

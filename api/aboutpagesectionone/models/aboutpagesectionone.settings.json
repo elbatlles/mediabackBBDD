@@ -1,0 +1,44 @@
+{
+  "kind": "singleType",
+  "collectionName": "aboutpagesectionones",
+  "info": {
+    "name": "about page section one",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "aboutImg": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true
+    },
+    "heading": {
+      "type": "string",
+      "default": "Drive Digital Revolution Through Data Science",
+      "required": true
+    },
+    "shortDesc": {
+      "type": "string",
+      "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.",
+      "required": true
+    },
+    "optionlist": {
+      "type": "component",
+      "repeatable": true,
+      "component": "aboutoption.about-us-option"
+    },
+    "goals": {
+      "type": "component",
+      "repeatable": true,
+      "component": "aboutgoals.about-goals"
+    }
+  }
+}

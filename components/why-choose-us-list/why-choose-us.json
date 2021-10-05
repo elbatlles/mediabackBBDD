@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_why_choose_us_list_why_chooseuses",
+  "info": {
+    "name": "whyChooseUs",
+    "icon": "align-justify"
+  },
+  "options": {},
+  "attributes": {
+    "number": {
+      "type": "string",
+      "default": "1",
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "default": "Data for All Your People",
+      "required": true
+    },
+    "shortText": {
+      "type": "string",
+      "default": "Dolor sit amet consectetur elit eiusmod tempor incidi dunt labore dolore magna aliqua enim.",
+      "required": true
+    }
+  }
+}

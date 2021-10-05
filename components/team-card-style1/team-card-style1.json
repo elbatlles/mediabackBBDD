@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_team_card_style1_team_card_style1s",
+  "info": {
+    "name": "teamCardStyle1",
+    "icon": "allergies",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true
+    },
+    "name": {
+      "type": "string",
+      "default": "Merv Adrian",
+      "required": true
+    },
+    "designation": {
+      "type": "string",
+      "default": "CEO & Founder",
+      "required": true
+    },
+    "socialLinks": {
+      "type": "component",
+      "repeatable": true,
+      "component": "social-links.social-links"
+    }
+  }
+}

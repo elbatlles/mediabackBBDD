@@ -1,0 +1,44 @@
+{
+  "kind": "singleType",
+  "collectionName": "why_chooseuses",
+  "info": {
+    "name": "why Choose Us",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "subTitle": {
+      "type": "string",
+      "default": " People Love Us",
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "default": "Why Choose Us?",
+      "required": true
+    },
+    "shortText": {
+      "type": "string",
+      "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.",
+      "required": true
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true
+    },
+    "whyChooseUs": {
+      "type": "component",
+      "repeatable": true,
+      "component": "why-choose-us-list.why-choose-us"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_aboutgoals_about_goals",
+  "info": {
+    "name": "About Goals",
+    "icon": "angle-right",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string",
+      "default": "Our History",
+      "required": true
+    },
+    "shortDesc": {
+      "type": "string",
+      "default": "Real innovations and a positive customer experience are the heart of successful communication.",
+      "required": true
+    },
+    "list": {
+      "type": "component",
+      "repeatable": true,
+      "component": "aboutgoalslist.about-goals-list",
+      "required": true
+    }
+  }
+}

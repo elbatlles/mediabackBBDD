@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/recent-projects",
+      "handler": "recent-projects.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/recent-projects",
+      "handler": "recent-projects.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/recent-projects",
+      "handler": "recent-projects.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

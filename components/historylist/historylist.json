@@ -1,0 +1,39 @@
+{
+  "collectionName": "components_historylist_historylists",
+  "info": {
+    "name": "historylist",
+    "icon": "align-right"
+  },
+  "options": {},
+  "attributes": {
+    "year": {
+      "type": "string",
+      "default": "2010",
+      "required": true
+    },
+    "month": {
+      "type": "string",
+      "required": true,
+      "default": "February 20th"
+    },
+    "title": {
+      "type": "string",
+      "default": "Founded",
+      "required": true
+    },
+    "longText": {
+      "type": "text",
+      "default": "Real innovations and a positive customer experience are the heart of successful communication. Lorem ipsum dolor sit amet, sectetur adipiscing elit, tempor incididunt ut labore et dolore magna.",
+      "required": true
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true
+    }
+  }
+}
