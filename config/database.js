@@ -1,4 +1,4 @@
-module.exports = ({ env }) => ({
+/*module.exports = ({ env }) => ({
   defaultConnection: "default",
   connections: {
     default: {
@@ -14,6 +14,24 @@ module.exports = ({ env }) => ({
           "1a8393cad953128940ce1ee335fd1a8b69d0745046c5cb4a53f3257a915bc5d9"
         ),
         ssl: { rejectUnauthorized: false },
+      },
+      options: {},
+    },
+  },
+});
+*/
+module.exports = ({ env }) => ({
+  defaultConnection: "default",
+  connections: {
+    default: {
+      connector: "bookshelf",
+      settings: {
+        client: "postgres",
+        host: env("DATABASE_HOST", "localhost"),
+        port: env.int("DATABASE_PORT", 5432),
+        database: env("DATABASE_NAME", "rewy-api"),
+        username: env("DATABASE_USERNAME", "angel"),
+        password: env("DATABASE_PASSWORD", ""),
       },
       options: {},
     },
